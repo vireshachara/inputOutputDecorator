@@ -1,0 +1,36 @@
+<h2>Child Component</h2>
+
+<h3>Example-1</h3>
+<p>Recived from parent component : <strong>{{empName}}</strong></p>
+
+<h3>Example-2</h3>
+<p>Recived the input values from parent : {{childValueRecived}}</p>
+
+<h3>Example-3</h3>
+<h4 style="color: blue;">Table data recived from parent component</h4>
+<table>
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Employee Age</th>
+            <th>Employee Place</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of empDetails">
+            <td>{{emp.name}}</td>
+            <td>{{emp.age}}</td>
+            <td>{{emp.place}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+<!-- <ul *ngFor="let emp of empDetails">
+    <li>{{emp.name}}</li>
+    <li>{{emp.age}}</li>
+    <li>{{emp.place}}</li>
+</ul> -->

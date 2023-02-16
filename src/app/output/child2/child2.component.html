@@ -1,0 +1,13 @@
+<h2>Child Component</h2>
+
+<h3>Example-1</h3>
+<button (click)="onSubmit()">Send data to parent component</button>
+
+<h3>Example-2</h3>
+<input type="text" placeholder="Enter Text" [(ngModel)]="enteredText">
+<input type="button" value="Send Data" (click)="onSendValues()">
+
+<h3>Example-3</h3>
+<div>
+    <button (click)="callParentGreet()">Greet</button>
+</div>

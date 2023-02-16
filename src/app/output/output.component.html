@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="c1">
+        <h2>Parent component</h2>
+
+        <h3>Example-1</h3>
+        Recived the data from child component : {{recivedData}}
+
+        <h3>Example-2</h3>
+        Recieved Input Values : {{inputValues}}
+    </div>
+    <div class="c1">
+        <app-child2 (childDataTransfer)="recievedData($event)" (inputValueTransfer)="inputValueRecived($event)"
+            (greetEvent)="greet($event)"></app-child2>
+    </div>
+</div>
